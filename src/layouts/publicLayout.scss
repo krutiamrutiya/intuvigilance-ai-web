@@ -1,0 +1,39 @@
+@use "../styles/variable.scss" as *;
+
+.auth-page {
+  overflow-y: hidden;
+  .auth-img {
+    height: 100dvh;
+    object-fit: cover;
+    width: 100%;
+  }
+  .form-section {
+    max-width: 430px;
+    min-width: 430px;
+    margin: auto;
+    
+    .form-label {
+      .ant-checkbox-label {
+        color: $label-color;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .ant-col:has(.form-section){
+        position: absolute;
+        left: 18%;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #ffffffe6;
+      }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      .ant-col:has(.form-section){
+        position: absolute;
+        left: 26%;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #ffffffe6;
+      }
+    }
+}

@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["es2018"],
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"],
     "target": "es2018",
     "module": "commonjs",
     "rootDir": "./",
@@ -17,6 +19,22 @@
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@utils/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@store/*": ["src/store/*"],
+      "@routes/*": ["src/routes/*"],
+      "@features/*": ["src/features/*"],
+      "@services/*": ["src/services/*"],
+      "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"],
+      "@constants/*": ["src/constants/*"],
+      "@types/*": ["src/types/*"],
+      "@config/*": ["src/config/*"],
+      "@api/*": ["src/api/*"],
+      "@context/*": ["src/context/*"],
+      "@pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"]
     }
   },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
